@@ -1,6 +1,6 @@
 #!/bin/bash
 
-path=/home/tim/workspace/Bachelorarbeit
+path=/home/tim/workspace/Bachelorarbeit/install_deps
 
 # Installing ros
 
