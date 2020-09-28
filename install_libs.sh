@@ -1,6 +1,9 @@
 #!/bin/bash
 
-path=/home/tim/workspace/Bachelorarbeit/install_deps
+rosdep_list=~/workspace/Bachelorarbeit/install_deps/rosdep.list
+
+mpi_workspace=~/workspace/mpi_system_baxter/workspace/
+
 
 # Installing ros
 
@@ -32,9 +35,7 @@ rosdep update
 
 #### install eigen version 3.2
 
-workspace=/home/tim/workspace/mpi_system_baxter/workspace/
-
-cd $workspace/src
+cd $mpi_workspace/src
 
 
 wget http://bitbucket.org/eigen/eigen/get/3.2.10.tar.bz2
@@ -49,7 +50,7 @@ sudo make install
 rm -r 3.2.10.tar*
 rm -r eigen-eigen-b9cd8366d4e8
 
-cd $workspace
+cd $mpi_workspace
 
 rm -r devel
 rm -r build
@@ -76,11 +77,9 @@ sudo dpkg -i libeinspline-dev_0.9.2-2_amd64.deb
 
 
 
-cd $path
-
 
 # install rosdeps for project
 
-sudo apt install $(cat rosdep.list )
+sudo apt install $(cat $rosdep_list )
 
 
