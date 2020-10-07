@@ -1,8 +1,8 @@
 #!/bin/bash
 
-rosdep_list=~/workspace/Bachelorarbeit/install_deps/rosdep.list
+rosdep_list=~/projects/install_baxter_deps/rosdep.list
 
-mpi_workspace=~/workspace/mpi_system_baxter/workspace/
+mpi_workspace=~/projects/mpi_system_baxter/workspace/
 
 
 # Installing ros
