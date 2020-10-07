@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rosdep_list=~/projects/install_baxter_deps/rosdep.list
+rosdep_list=./rosdep.list
 
 mpi_workspace=~/projects/mpi_system_baxter/workspace/
 
